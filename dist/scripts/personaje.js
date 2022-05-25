@@ -1,18 +1,21 @@
 /* eslint-disable no-unused-vars */
 export class Personaje {
+    nombre;
+    familia;
+    edad;
+    categoria;
     static serie = 'GoT';
-    private _estadoVivo: boolean;
-    public get estadoVivo(): boolean {
+    _estadoVivo;
+    get estadoVivo() {
         return this._estadoVivo;
     }
-    protected mensaje: string;
+    mensaje;
     // public nombre: string;
-    constructor(
-        public nombre: string,
-        public familia: string,
-        public edad: number,
-        public categoria: 'rey' | 'luchador' | 'asesor' | 'escudero'
-    ) {
+    constructor(nombre, familia, edad, categoria) {
+        this.nombre = nombre;
+        this.familia = familia;
+        this.edad = edad;
+        this.categoria = categoria;
         // this.nombre = nombre
         this._estadoVivo = true;
         this.mensaje = '';

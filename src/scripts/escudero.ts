@@ -10,7 +10,7 @@ export class Escudero extends Personaje {
         public sumision: number,
         public amo: Luchador
     ) {
-        super(nombre, familia, edad);
+        super(nombre, familia, edad, 'escudero');
         this.mensaje = 'Soy un looser';
     }
 }
